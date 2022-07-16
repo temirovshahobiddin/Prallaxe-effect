@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    
+    <header class="header">
+        <nav class="header__nav">
+            <div class="container">
+                <a href="#!" class="header__logo">logo</a>
+                <ul class="header__list">
+                    <li class="header__item"><a href="#!" class="header__link">home</a></li>
+                    <li class="header__item"><a href="#!" class="header__link">home</a></li>
+                    <li class="header__item"><a href="#!" class="header__link">home</a></li>
+                    <li class="header__item"><a href="#!" class="header__link">home</a></li>
+                </ul>
+            </div>
+        </nav>
+        <img src="img/header/fantasy.png" alt="" class="header__fantasy">
+        <img src="img/header/cloud1.png" alt="" class="header__cloud cloud1" data-speed="0.25">
+        <img src="img/header/cloud2.png" alt="" class="header__cloud cloud2" data-speed="-0.45">
+        <img src="img/header/cloud3.png" alt="" class="header__cloud cloud3" data-speed="0.2">
+        <img src="img/header/Group.png" alt="" class="header__boat">
+        <div class="header__content">
+            <h1 class="header__title">Parallax Effect</h1>
+        </div>
+    </header>
+    <main>
+        <section class="parallax">
+            <h2 class="parallax__title">Parallax Effect</h2>
+            <div class="parallax__box">
+                <img src="img/parallax/Parallax_3.png" alt="" class="parallax__banner">
+                <img src="img/parallax/Parallax_4.png" alt="" class="parallax__ball layer1" data-speed="-5">
+                <img src="img/parallax/Parallax_5.png" alt="" class="parallax__ball layer2" data-speed="5">
+            </div>
+        </section>
+        <section class="timer">
+            <div class="container">
+                <div class="timer__item">
+                    <p class="timer__num" data-num="123">123</p>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <a href="#!" class="timer__btn">Button</a>
+                </div>
+                <div class="timer__item">
+                    <p class="timer__num" data-num="546">546</p>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <a href="#!" class="timer__btn">Button</a>
+                </div>
+                <div class="timer__item">
+                    <p class="timer__num" data-num="322">322</p>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <a href="#!" class="timer__btn">Button</a>
+                </div>
+                <div class="timer__item">
+                    <p class="timer__num" data-num="198">198</p>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <a href="#!" class="timer__btn">Button</a>
+                </div>
+            </div>
+        </section>
+        <section class="cards">
+            <div class="container">
+                <div class="card">
+                    <div class="card__item"></div>
+                </div>
+                <div class="card">
+                    <div class="card__item"></div>
+                </div>
+                <div class="card">
+                    <div class="card__item"></div>
+                </div>
+                <div class="card">
+                    <div class="card__item"></div>
+                </div>
+            </div>
+        </section>
+        <section class="scroll">
+            <div class="container">
+                <div class="scroll__cards">
+                    <div class="scroll__card fade-right" data-speed="400"></div>
+                    <div class="scroll__card fade-right" data-speed="600"></div>
+                    <div class="scroll__card fade-right" data-speed="800"></div>
+                    <div class="scroll__card fade-right" data-speed="1000"></div>
+                </div>
+            </div>
+        </section>
+        <section class="toDoList">
+            <div class="container">
+                <h2 class="toDoList__title">To Do List</h2>
+                <div class="toDoList__box">
+                    <input type="text" class="toDoList__inp" placeholder="Notes">
+                    <button class="toDoList__btn">Add</button>
+                </div>
+                <ul class="toDoList__list">
+                    <li class="toDoList__item">Text <button class="toDoList__btn remove">X</button></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    
+    <script src="app.js"></script>
+</body>
+</html>
